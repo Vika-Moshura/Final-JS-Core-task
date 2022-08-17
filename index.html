@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="time">
+        <span class="minutes">01</span>
+        <span>:</span>
+        <span class="seconds">00</span>
+    </div>
+    <div class="buttons">
+        <button id="start">Start game!</button>
+        <button id="check" disabled>Check result</button>
+        <button id="newGame">New game</button>
+
+    </div>
+    <div class="container">
+
+        <div id="puzzles" class="block1">
+            <div class="unit" data-order="0"></div>
+            <div class="unit" data-order="1" style="background-position:-150px 0"></div>
+            <div class="unit" data-order="2" style="background-position: -300px 0"></div>
+            <div class="unit" data-order="3" style="background-position: -450px 0"></div>
+            <div class="unit" data-order="4" style="background-position: 0 -150px"></div>
+            <div class="unit" data-order="5" style="background-position: -150px -150px"></div>
+            <div class="unit" data-order="6" style="background-position: -300px -150px"></div>
+            <div class="unit" data-order="7" style="background-position: -450px -150px"></div>
+            <div class="unit" data-order="8" style="background-position: 0px -300px"></div>
+            <div class="unit" data-order="9" style="background-position: -150px -300px"></div>
+            <div class="unit" data-order="10" style="background-position: -300px -300px"></div>
+            <div class="unit" data-order="11" style="background-position: -450px -300px"></div>
+            <div class="unit" data-order="12" style="background-position: 0px -450px"></div>
+            <div class="unit" data-order="13" style="background-position: -150px -450px"></div>
+            <div class="unit" data-order="14" style="background-position: -300px -450px"></div>
+            <div class="unit" data-order="15" style="background-position: -450px -450px"></div>
+        </div>
+        <div id="answer" class="block1">
+            <div class="unitPlace"></div>
+            <div class="unitPlace"></div>
+            <div class="unitPlace"></div>
+            <div class="unitPlace"></div>
+            <div class="unitPlace"></div>
+            <div class="unitPlace"></div>
+            <div class="unitPlace"></div>
+            <div class="unitPlace"></div>
+            <div class="unitPlace"></div>
+            <div class="unitPlace"></div>
+            <div class="unitPlace"></div>
+            <div class="unitPlace"></div>
+            <div class="unitPlace"></div>
+            <div class="unitPlace"></div>
+            <div class="unitPlace"></div>
+            <div class="unitPlace"></div>
+        </div>
+    </div>
+    <div class="modalLost">
+        <div class="container">
+            <p>It's a pity, but you lost:(</p>
+            <div>
+                <button id="close">Close</button>
+            </div>
+        </div>
+    </div>
+    <div class="modalWin">
+        <div class="container">
+            <p></p>
+            <div>
+                <button id="close">Close</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="container">
+            <p></p>
+            <div>
+                <button id="close">Close</button>
+                <button id="check1">Check</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
